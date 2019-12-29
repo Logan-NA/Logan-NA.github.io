@@ -79,18 +79,19 @@
 
 
 
-<meta name="description" content="常用命令–help cd ​    cd -L进入软连接的目录 ​    cd -P直接进入软连接指向的文件夹  ​    cd 回到家目录 ​    cd - 回到刚刚的文件夹 man ​    当man一个东西的时候有时这个东西不止1个 所以需要先whatis xxx例如 ​     ​    再去选择man第几页 Linux目录结构 文件类型">
+<meta name="description" content="常用命令–help cd ​    cd -L进入软连接的目录 ​    cd -P直接进入软连接指向的文件夹  ​    cd 回到家目录 ​    cd - 回到刚刚的文件夹 man ​    当man一个东西的时候有时这个东西不止1个 所以需要先whatis xxx例如 ​     ​    再去选择man第几页 touch ​    如果文件已存在，再touch一个相同名字的文件，不会覆盖">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux_8">
 <meta property="og:url" content="logan-na.github.io/2019/12/29/Linux-8/index.html">
 <meta property="og:site_name" content="Logan-NA">
-<meta property="og:description" content="常用命令–help cd ​    cd -L进入软连接的目录 ​    cd -P直接进入软连接指向的文件夹  ​    cd 回到家目录 ​    cd - 回到刚刚的文件夹 man ​    当man一个东西的时候有时这个东西不止1个 所以需要先whatis xxx例如 ​     ​    再去选择man第几页 Linux目录结构 文件类型">
+<meta property="og:description" content="常用命令–help cd ​    cd -L进入软连接的目录 ​    cd -P直接进入软连接指向的文件夹  ​    cd 回到家目录 ​    cd - 回到刚刚的文件夹 man ​    当man一个东西的时候有时这个东西不止1个 所以需要先whatis xxx例如 ​     ​    再去选择man第几页 touch ​    如果文件已存在，再touch一个相同名字的文件，不会覆盖">
 <meta property="og:image" content="logan-na.github.io/2019/12/29/image/cd%E5%91%BD%E4%BB%A4%E8%BD%AF%E9%93%BE%E6%8E%A5.jpg">
 <meta property="og:image" content="logan-na.github.io/2019/12/29/image/man_whatis.jpg">
+<meta property="og:image" content="logan-na.github.io/2019/12/29/image/cp_caution.jpg">
 <meta property="og:image" content="logan-na.github.io/2019/12/29/image/Linux%E7%9B%AE%E5%BD%95.png">
 <meta property="og:image" content="logan-na.github.io/2019/12/29/image/filetype.png">
 <meta property="article:published_time" content="2019-12-29T07:48:50.000Z">
-<meta property="article:modified_time" content="2019-12-29T09:53:02.596Z">
+<meta property="article:modified_time" content="2019-12-29T11:39:16.579Z">
 <meta property="article:author" content="Dan">
 <meta property="article:tag" content="python基础">
 <meta name="twitter:card" content="summary">
@@ -370,6 +371,14 @@
 <p>所以需要先whatis xxx例如</p>
 <p>​    <img src="../image/man_whatis.jpg" alt=""></p>
 <p>​    再去选择man第几页</p>
+<p><strong>touch</strong></p>
+<p>​    如果文件已存在，再touch一个相同名字的文件，不会覆盖掉已存在的文件</p>
+<p><strong>cp</strong></p>
+<p>​    cp -avi 完全复制  即保留属性 又可以复制文件夹   -v是显示当前复制进度  -i是复制前加以询问  最好全带上</p>
+<p>​    在普通用户中的cp是没加任何option的，而root用户的cp是加了-i的</p>
+<p>​    cp -r 复制文件夹</p>
+<p><strong>mv</strong>和cp类似</p>
+<p>​    <img src="../image/cp_caution.jpg" alt="cp_caution"></p>
 <h2 id="Linux目录结构"><a href="#Linux目录结构" class="headerlink" title="Linux目录结构"></a>Linux目录结构</h2><p><img src="../image/Linux%E7%9B%AE%E5%BD%95.png" alt=""></p>
 <h2 id="文件类型"><a href="#文件类型" class="headerlink" title="文件类型"></a>文件类型</h2><p><img src="../image/filetype.png" alt=""></p>
 
